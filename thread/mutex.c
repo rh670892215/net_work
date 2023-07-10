@@ -27,6 +27,7 @@ int main() {
         pthread_join(threadIDs[i], NULL);
     }
     printf("num is %lld\n", num);
+    pthread_mutex_destroy(&mutex); //销毁互斥量
     return 0;
 }
 

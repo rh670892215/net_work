@@ -16,7 +16,6 @@ void writeMessage(int sock, char *message);
 int main(int argc, char *argv[]) {
     int clientSocket = socket(PF_INET, SOCK_STREAM, 0);
 
-
     struct sockaddr_in client_addr;
     memset(&client_addr, 0, sizeof(client_addr));
     client_addr.sin_family = AF_INET;
